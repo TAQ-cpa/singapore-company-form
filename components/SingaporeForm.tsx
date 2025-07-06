@@ -58,14 +58,14 @@ export default function SingaporeForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState('');
 
-  const handleInputChange = (field, value) => {
+  const handleInputChange = (field: string, value: string) => {
     setFormData(prev => ({
       ...prev,
       [field]: value
     }));
   };
 
-  const handleDirectorChange = (index, field, value) => {
+  const handleDirectorChange = (index: number, field: string, value: string | boolean) => {
     setFormData(prev => ({
       ...prev,
       directors: prev.directors.map((director, i) => 
@@ -74,7 +74,7 @@ export default function SingaporeForm() {
     }));
   };
 
-  const handleShareholderChange = (index, field, value) => {
+  const handleShareholderChange = (index: number, field: string, value: string | boolean) => {
     setFormData(prev => ({
       ...prev,
       shareholders: prev.shareholders.map((shareholder, i) => 
