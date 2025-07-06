@@ -1,7 +1,9 @@
+'use client';
+
 import { useState } from 'react';
 import { Send, Building2, User, FileText, Calendar, DollarSign } from 'lucide-react';
 
-export default function SingaporeCompanyForm() {
+export default function SingaporeForm() {
   const [formData, setFormData] = useState({
     // 基本情報
     companyName1: '',
